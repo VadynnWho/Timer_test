@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.body.insertAdjacentHTML('afterbegin', data);
+    });
+</script>
     <!-- Заголовок сторінки -->
     <h1>Simple Web Timer</h1>
     <!-- Контейнер для таймера -->
