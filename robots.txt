@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /script.js
+Disallow: /style.css
+Disallow: /pages.css
+# Disallow: /search?*
+# Disallow: /admin/
+
+Allow: /
+Sitemap: https://simplewebtimer.com/sitemap.xml

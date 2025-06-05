@@ -1,0 +1,123 @@
+/* Стилі для навігації */
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Стилі для основного контенту сторінок */
+.page-content {
+    margin-top: 100px; /* Відступ від фіксованого заголовка */
+    margin-bottom: 80px; /* Відступ до футера */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: left; /* Контент може бути вирівняний по лівому краю */
+    max-width: 800px; /* Обмеження ширини контенту */
+    width: 90%;
+    box-sizing: border-box; /* Враховуємо padding у загальній ширині */
+}
+
+.page-content h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffcc00; /* Можна використовувати акцентний колір */
+}
+
+.page-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.page-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.page-content ul li {
+    margin-bottom: 8px;
+}
+
+.contact-info a {
+    color: #ffcc00; /* Акцентний колір для посилань */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Стилі для футера */
+footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Адаптивні стилі для мобільних пристроїв */
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+
+    .page-content {
+        padding: 20px 30px;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+
+    .page-content h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+    header {
+        padding: 10px 0;
+    }
+    .page-content {
+        padding: 15px 20px;
+        margin-top: 100px; /* Збільшимо відступ, якщо навігація стала стовпцем */
+    }
+}

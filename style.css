@@ -1,0 +1,63 @@
+/* Основні стилі для сторінки */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #a46ded, #a46ded);
+    color: white;
+}
+
+/* Стиль заголовку */
+h1 {
+    margin-bottom: 50px;
+}
+
+/* Контейнер для таймера */
+#countdown {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Стиль для таймера */
+#timer {
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+/* Стиль для одиниць виміру часу */
+.timer-unit {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Адаптивні стилі для мобільних пристроїв */
+@media (max-width: 600px) {
+    #timer {
+        font-size: 2rem;
+    }
+    .timer-unit {
+        font-size: 1rem;
+    }
+}
+
+/* Анімація для завершення таймера */
+@keyframes endAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Клас для активації анімації */
+.animate-end {
+    animation: endAnimation 1.5s infinite;
+}
